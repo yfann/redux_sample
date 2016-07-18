@@ -7,7 +7,7 @@ export default class Footer extends Component{
         }
 
         return (
-            <a href='#' conClick={e=>{
+            <a href='#' onClick={e=>{
                 e.preventDefault();
                 this.props.onFilterChange(filter);
             }}>
