@@ -2,9 +2,9 @@
 
 ## Command
 
-### Install dependencies
++ `npm run init`
 
-`npm run init`
++ `gulp`
 
 
 ## Ref
