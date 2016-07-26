@@ -6,10 +6,12 @@ import {Provider} from 'react-redux';
 import App from './containers/App';
 import rootReducer from './reducers';
 import thunk from 'redux-thunk';
+import createLogger from 'redux-logger';
 
-let store=createStore(
+const logger=createLogger();
+const store=createStore(
     rootReducer,
-    applyMiddleware(thunk)
+    applyMiddleware(thunk,logger)
 );
 
 
